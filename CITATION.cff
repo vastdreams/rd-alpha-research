@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "R&D Alpha: Investment Intensity and Long-Term Stock Returns"
+message: "If you use this research, please cite it as below."
+type: software
+authors:
+  - family-names: Sehgal
+    given-names: Abhishek
+    orcid: ""
+    affiliation: Finsoeasy Research
+repository-code: "https://github.com/vastdreams/rd-alpha-research"
+url: "https://research.finsoeasy.com"
+abstract: >-
+  Empirical analysis of the relationship between corporate R&D investment
+  intensity and subsequent long-term stock returns. This research demonstrates
+  that companies with high R&D spending relative to revenue exhibit
+  statistically significant excess returns over 5, 10, and 20-year periods.
+  The findings suggest that standard accounting treatment of R&D as an expense
+  rather than a capital asset creates systematic mispricing opportunities.
+keywords:
+  - R&D investment
+  - stock returns
+  - factor investing
+  - quantitative finance
+  - empirical finance
+license: MIT
+version: "1.0.0"
+date-released: "2025-01-01"
+
