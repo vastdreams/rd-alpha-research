@@ -5,23 +5,40 @@ type: software
 authors:
   - family-names: Sehgal
     given-names: Abhishek
-    orcid: ""
-    affiliation: Finsoeasy Research
+    orcid: "https://orcid.org/0009-0000-9424-4695"
+    affiliation: FSE Research & Investments Pty Ltd
 repository-code: "https://github.com/vastdreams/rd-alpha-research"
 url: "https://research.finsoeasy.com"
 abstract: >-
   Empirical analysis of the relationship between corporate R&D investment
-  intensity and subsequent long-term stock returns. This research demonstrates
-  that companies with high R&D spending relative to revenue exhibit
-  statistically significant excess returns over 5, 10, and 20-year periods.
-  The findings suggest that standard accounting treatment of R&D as an expense
-  rather than a capital asset creates systematic mispricing opportunities.
+  intensity and subsequent long-term stock returns. Using S&P 500 constituents
+  over 30 years (Jul1995-Jun2025), the research finds an annual HML_RD premium
+  of +3.73%/yr. The implementable RD20 strategy delivers +7.52% pp/yr net premium
+  vs S&P 500 after transaction costs (Jul2001-Jun2025). Statistical significance
+  is established via Fama-MacBeth cross-sectional regressions and monthly factor
+  spanning tests (FF5 alpha = 4.37%, p < 0.01).
 keywords:
   - R&D investment
   - stock returns
   - factor investing
   - quantitative finance
   - empirical finance
+  - Fama-MacBeth
+  - innovation premium
 license: MIT
 version: "1.0.0"
-date-released: "2025-12-30"
+date-released: "2026-01-01"
+
+preferred-citation:
+  type: report
+  authors:
+    - family-names: Sehgal
+      given-names: Abhishek
+      orcid: "https://orcid.org/0009-0000-9424-4695"
+  title: "R&D Alpha: Investment Intensity and Long-Term Stock Returns"
+  year: 2026
+  month: 1
+  version: "1.0"
+  institution: FSE Research & Investments Pty Ltd
+  url: "https://research.finsoeasy.com/rnd-alpha-paper.pdf"
+
