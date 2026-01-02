@@ -1,22 +1,31 @@
 # R&D Alpha: Investment Intensity and Long-Term Stock Returns
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://img.shields.io/badge/DOI-SSRN%20Pending-blue)](https://research.finsoeasy.com)
+
 Empirical evidence on the relationship between corporate R&D investment intensity and subsequent long-term equity returns.
 
-**Live Platform:** [https://research.finsoeasy.com](https://research.finsoeasy.com)
+**Live Platform:** [https://research.finsoeasy.com](https://research.finsoeasy.com)  
+**Full Paper (PDF):** [https://research.finsoeasy.com/rnd-alpha-paper.pdf](https://research.finsoeasy.com/rnd-alpha-paper.pdf)
 
 ## Abstract
 
-This research examines whether companies with high research and development (R&D) expenditures relative to revenue generate superior long-term stock returns. Using data from S&P 500 constituents over multiple decades, we find that firms in the top quintile of R&D intensity outperform bottom-quintile firms by approximately 7 percentage points annually on a risk-adjusted basis.
+This research examines whether companies with high research and development (R&D) expenditures relative to revenue generate superior long-term stock returns. Using data from S&P 500 constituents over 30 years (Jul1995-Jun2025), we find that firms in the top quintile of R&D intensity outperform bottom-quintile firms by approximately 3.73 percentage points annually.
 
 The core thesis: R&D spending is expensed rather than capitalized under GAAP and IFRS, systematically understating the true economic value of innovation-intensive companies. This accounting treatment creates a persistent mispricing opportunity.
 
+**Statistical significance** is established via:
+- Fama-MacBeth cross-sectional regressions (p = 0.0737)
+- Monthly factor spanning tests (FF5 alpha = 4.37%, p < 0.01)
+
 ## Key Findings
 
-| Metric | Q5 (High R&D) | Q1 (Low R&D) | Spread |
-|--------|---------------|--------------|--------|
-| Avg Annual Return | 15.2% | 8.1% | +7.1% |
-| Sharpe Ratio | 0.72 | 0.41 | +0.31 |
-| Win Rate (Annual) | 68% | 52% | +16% |
+| Metric | Value | Period |
+|--------|-------|--------|
+| Annual HML_RD Premium | +3.73% | Jul1995-Jun2025 (30 years) |
+| Win Rate (Annual) | 57% | 17 of 30 years positive |
+| RD20 Net Premium vs SPY | +7.52%/yr | Jul2001-Jun2025 (24 years) |
+| FF5 Alpha | +4.37%/yr | Monthly spanning (p < 0.01) |
 
 ## Repository Structure
 
@@ -27,10 +36,9 @@ rd-alpha-research/
 │   ├── backtesting/       # Portfolio backtest methodology
 │   ├── factors/           # Factor premium calculations
 │   └── data/              # Data acquisition utilities
-├── paper/                 # Research paper (markdown)
+├── docs/                  # Methodology documentation
 ├── notebooks/             # Jupyter notebooks for replication
-├── data/                  # Data README and samples
-└── docs/                  # Methodology documentation
+└── data/                  # Data README and samples
 ```
 
 ## Replication
@@ -88,25 +96,33 @@ Where:
 - **Holding Period**: 12 months with annual rebalancing
 - **Data Lag**: Uses FY(T-1) financials for T-year formation
 - **Universe**: S&P 500 constituents (point-in-time)
-- **Transaction Costs**: 10 bps round-trip (default)
+- **Transaction Costs**: 18.3 bps round-trip (Novy-Marx & Velikov 2016)
 
 ## Citation
 
 ```bibtex
-@software{sehgal2025rdalpha,
+@techreport{sehgal2026rdalpha,
   author = {Sehgal, Abhishek},
   title = {R&D Alpha: Investment Intensity and Long-Term Stock Returns},
-  year = {2025},
+  year = {2026},
+  month = {January},
+  institution = {FSE Research & Investments Pty Ltd},
   url = {https://research.finsoeasy.com},
-  repository = {https://github.com/vastdreams/rd-alpha-research}
+  note = {Working paper, Version 1.0}
 }
 ```
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
+MIT License. See LICENSE for details.
 
 ## Acknowledgments
 
-This research builds upon foundational work in factor investing and R&D capitalization literature, including studies by Lev & Sougiannis (1996), Chan, Lakonishok & Sougiannis (2001), and Eberhart, Maxwell & Siddique (2004).
+This research builds upon foundational work in factor investing and R&D capitalization literature, including studies by Lev & Sougiannis (1996), Chan, Lakonishok & Sougiannis (2001), Eberhart, Maxwell & Siddique (2004), and Ahmed, Bu & Ye (2023).
+
+## Author
+
+**Abhishek Sehgal**  
+ORCID: [0009-0000-9424-4695](https://orcid.org/0009-0000-9424-4695)  
+FSE Research & Investments Pty Ltd
 
