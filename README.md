@@ -1,8 +1,3 @@
-> **⚠️ This repository has been archived. Development has moved to [fse-rnd-alpha](https://github.com/vastdreams/fse-rnd-alpha).**
-
----
-
-# R&D Alpha: Investment Intensity and Long-Term Stock Returns
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://img.shields.io/badge/DOI-SSRN%20Pending-blue)](https://research.finsoeasy.com)
