@@ -1,3 +1,7 @@
+> **⚠️ This repository has been archived. Development has moved to [fse-rnd-alpha](https://github.com/vastdreams/fse-rnd-alpha).**
+
+---
+
 # R&D Alpha: Investment Intensity and Long-Term Stock Returns
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -125,4 +129,3 @@ This research builds upon foundational work in factor investing and R&D capitali
 **Abhishek Sehgal**  
 ORCID: [0009-0000-9424-4695](https://orcid.org/0009-0000-9424-4695)  
 FSE Research & Investments Pty Ltd
-
